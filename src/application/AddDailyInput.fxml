@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="700.0" style="-fx-background-color: #D0D0E3;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AddDailyInputController">
+   <children>
+      <Label layoutX="64.0" layoutY="76.0" text="ID">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="id" layoutX="129.0" layoutY="77.0" prefHeight="25.0" prefWidth="85.0" />
+      <Label layoutX="270.0" layoutY="74.0" text="Name">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="name" layoutX="349.0" layoutY="76.0" prefHeight="25.0" prefWidth="221.0" />
+      <Label layoutX="64.0" layoutY="140.0" text="Date">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="dd" layoutX="129.0" layoutY="142.0" prefHeight="25.0" prefWidth="31.0" promptText="dd" />
+      <Label layoutX="329.0" layoutY="140.0" prefHeight="30.0" prefWidth="141.0" text="Working Hours">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="start" layoutX="483.0" layoutY="142.0" prefHeight="25.0" prefWidth="85.0" />
+      <Label layoutX="65.0" layoutY="267.0" text="Machine">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="66.0" layoutY="335.0" text="Process">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="63.0" layoutY="417.0" prefHeight="30.0" prefWidth="51.0" text=" Shift">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="shift" layoutX="133.0" layoutY="419.0" prefHeight="26.0" prefWidth="161.0" promptText="Day/Night" />
+      <Label layoutX="355.0" layoutY="197.0" text="Over Time">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ot" layoutX="483.0" layoutY="197.0" prefHeight="25.0" prefWidth="85.0" />
+      <Label layoutX="68.0" layoutY="491.0" text="Expected O/P">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="eop" layoutX="211.0" layoutY="493.0" prefHeight="25.0" prefWidth="85.0" />
+      <Label layoutX="365.0" layoutY="490.0" text="Actual O/P">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="aop" layoutX="477.0" layoutY="492.0" prefHeight="25.0" prefWidth="85.0" />
+      <Label layoutX="68.0" layoutY="567.0" prefHeight="30.0" prefWidth="134.0" text="Machine Error">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="merror" layoutX="211.0" layoutY="569.0" prefHeight="25.0" prefWidth="85.0" />
+      <Label layoutX="366.0" layoutY="567.0" prefHeight="30.0" prefWidth="91.0" text="Rejection">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="reject" layoutX="477.0" layoutY="569.0" prefHeight="25.0" prefWidth="85.0" />
+      <ComboBox fx:id="machine" layoutX="172.0" layoutY="269.0" prefHeight="25.0" prefWidth="354.0" />
+      <ComboBox fx:id="process" layoutX="174.0" layoutY="337.0" onAction="#getExpected" prefHeight="25.0" prefWidth="354.0" />
+      <TextField fx:id="mm" layoutX="179.0" layoutY="142.0" prefHeight="25.0" prefWidth="42.0" promptText="mm" />
+      <TextField fx:id="yyyy" layoutX="243.0" layoutY="142.0" prefHeight="25.0" prefWidth="51.0" promptText="yyyy" />
+      <Label layoutX="62.0" layoutY="195.0" text="Time">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="from" layoutX="130.0" layoutY="197.0" prefHeight="25.0" prefWidth="51.0" promptText="From" />
+      <TextField fx:id="to" layoutX="218.0" layoutY="197.0" prefHeight="25.0" prefWidth="51.0" promptText="To" />
+      <Button layoutX="255.0" layoutY="636.0" mnemonicParsing="false" onAction="#addDaily" prefHeight="25.0" prefWidth="190.0" text="ADD" />
+   </children>
+</AnchorPane>

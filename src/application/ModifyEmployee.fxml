@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="300.0" minWidth="300.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="563.0" prefWidth="735.0" style="-fx-background-color: #D0D0E3;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ModifyEmployeeController">
+   <children>
+      <Label layoutX="32.0" layoutY="41.0" prefHeight="65.0" prefWidth="118.0" text="Employee ID">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="104.0" prefHeight="31.0" prefWidth="110.0" text="First Name">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="151.0" text="Last Name">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="214.0" prefHeight="30.0" prefWidth="75.0" text="Gender">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="male" layoutX="157.0" layoutY="216.0" mnemonicParsing="false" text="Male">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="female" layoutX="275.0" layoutY="216.0" mnemonicParsing="false" text="Female">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="32.0" layoutY="287.0" text="Mobile No.">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="350.0" text="Address">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="id" layoutX="157.0" layoutY="58.0" prefHeight="31.0" prefWidth="118.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="fname" layoutX="157.0" layoutY="104.0" prefHeight="31.0" prefWidth="268.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="lname" layoutX="157.0" layoutY="150.0" prefHeight="31.0" prefWidth="268.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="mno" layoutX="157.0" layoutY="287.0" prefHeight="31.0" prefWidth="268.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextArea fx:id="add" layoutX="157.0" layoutY="350.0" prefHeight="103.0" prefWidth="268.0" />
+      <Button layoutX="60.0" layoutY="489.0" mnemonicParsing="false" onAction="#modifyEmp" prefHeight="31.0" prefWidth="195.0" text="Modify Employee" />
+      <Label fx:id="status" layoutX="300.0" layoutY="492.0" prefHeight="26.0" prefWidth="223.0" />
+   </children>
+</AnchorPane>

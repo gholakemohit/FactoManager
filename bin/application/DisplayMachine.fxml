@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DisplayMachineController">
+   <children>
+      <TableView fx:id="tableEmployee" prefHeight="800.0" prefWidth="1600.0">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="200.0" text="ID" />
+          <TableColumn fx:id="mnameColumn" prefWidth="600.0" text="Machine Name" />
+            <TableColumn fx:id="pnameColumn" minWidth="0.0" prefWidth="600.0" text="Process Name" />
+            <TableColumn fx:id="cycleColumn" prefWidth="200.0" text="Cycle Time" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

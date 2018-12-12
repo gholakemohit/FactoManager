@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <top>
+      <MenuBar prefHeight="50.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Employee">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#displayEmployee" text="Display Employee" />
+                  <MenuItem mnemonicParsing="false" onAction="#addEmployee" text="Add Employee" />
+                  <MenuItem mnemonicParsing="false" onAction="#modEmployee" text="Modify Employee" />
+                  <MenuItem mnemonicParsing="false" onAction="#delEmployee" text="Delete Employee" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Supervisor">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#displaySupervisor" text="Display Supervisor" />
+                  <MenuItem mnemonicParsing="false" onAction="#addSupervisor" text="Add Supervisor" />
+                  <MenuItem mnemonicParsing="false" onAction="#modifySupervisor" text="Modify Supervisor" />
+                  <MenuItem mnemonicParsing="false" onAction="#deleteSupervisor" text="Delete Supervisor" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Machine">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#displayMachine" text="Display Machine" />
+                  <MenuItem mnemonicParsing="false" onAction="#addMachine" text="Add Machine" />
+                  <MenuItem mnemonicParsing="false" onAction="#modifyMachine" text="Modify Machine" />
+                  <MenuItem mnemonicParsing="false" onAction="#deleteMachine" text="Delete Machine" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Record">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#addInput" text="Add Daily Work" />
+                  <MenuItem mnemonicParsing="false" onAction="#display" text="Display Daily Work" />
+                  <MenuItem mnemonicParsing="false" onAction="#addMonthly" text="Add Monthly" />
+                  <MenuItem mnemonicParsing="false" onAction="#dislayMonthly" text="Display Monthly" />
+                  <MenuItem fx:id="ddw" mnemonicParsing="false" onAction="#deleteDaily" text="Delete Daily Work" />
+                  <MenuItem fx:id="dmw" mnemonicParsing="false" onAction="#deleteMonthly" text="Delete Monthly Work" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Report Graph">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#dailyGraph" text="Daily Report Graph" />
+                  <MenuItem mnemonicParsing="false" onAction="#monthlyGraph" text="Monthly Report Graph" />
+                  <MenuItem mnemonicParsing="false" onAction="#compareEmployee" text="Compare All Employees" />
+                  <MenuItem mnemonicParsing="false" onAction="#twoEmployees" text="Compare Two Employees" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="About Us">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#aboutUs" text="Developers" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Sign Out">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#signOut" text="Sign Out" />
+              </items>
+            </Menu>
+        </menus>
+         <padding>
+            <Insets top="15.0" />
+         </padding>
+      </MenuBar>
+   </top>
+   <center>
+      <ImageView fitHeight="369.0" fitWidth="591.0" opacity="0.3" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

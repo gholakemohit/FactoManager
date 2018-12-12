@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.displayMonthlyController">
+   <children>
+      <TableView fx:id="tableDisplay" layoutY="93.0" prefHeight="600.0" prefWidth="1530.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="100.0" text="ID" />
+          <TableColumn fx:id="nod" prefWidth="100.0" text="No. of Days" />
+            <TableColumn fx:id="date" prefWidth="100.0" text="Date" />
+            <TableColumn fx:id="target" prefWidth="100.0" text="Target" />
+            <TableColumn fx:id="present" prefWidth="100.0" text="Present" />
+            <TableColumn fx:id="rejection" prefWidth="100.0" text="Rejection" />
+            <TableColumn fx:id="worker" prefWidth="260.0" text="Behaviour with Worker" />
+            <TableColumn fx:id="owner" prefWidth="260.0" text="Behaviour with Owner" />
+            <TableColumn fx:id="work" prefWidth="260.0" text="Involvement in Work" />
+            <TableColumn fx:id="oeff" prefWidth="150.0" text="Monthly Efficiency" />
+        </columns>
+      </TableView>
+      <Label layoutX="41.0" layoutY="42.0" prefHeight="18.0" prefWidth="121.0" text="Employee ID">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="id1" layoutX="163.0" layoutY="45.0" />
+      <Button layoutX="786.0" layoutY="44.0" mnemonicParsing="false" onAction="#show" prefHeight="26.0" prefWidth="81.0" text="Show" />
+      <Label layoutX="340.0" layoutY="42.0" prefHeight="30.0" prefWidth="174.0" text="Employee Name">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="id11" layoutX="500.0" layoutY="45.0" prefHeight="26.0" prefWidth="261.0" />
+   </children> 
+</AnchorPane>
